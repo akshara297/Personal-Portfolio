@@ -2,8 +2,7 @@
 
 Welcome to the source repository for my personal engineering portfolio. Designed with a high-fidelity, interactive geometric plexus constellation backdrop, this terminal-style portfolio highlights my current work, capabilities, and live system metrics directly from GitHub.
 
-🔗 **Live Deployment:** [akshara-portfolio-297-297.netlify.app](https://akshara-portfolio-297-297.netlify.app)
-
+🔗 **Live Deployment:** [https://personal-portfolio-two-pi-55.vercel.app/]
 ---
 
 ## 🚀 System Architecture
