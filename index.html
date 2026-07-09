@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKSHARA // FULL-STACK DEVELOPER</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Premium Fonts: Orbitron for sci-fi heading nodes, Fira Code for clean tech details -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        mono: ['Fira Code', 'monospace'],
+                        heading: ['Orbitron', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #05020c;
+        }
+        /* Custom scrollbar matching your theme neon */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #05020c;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, #d946ef, #f97316);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="text-slate-200 min-h-screen overflow-x-hidden relative selection:bg-fuchsia-500/30 selection:text-white font-mono">
+
+    <!-- THE LIVING GEOMETRIC CONSTELLATION CANVAS -->
+    <canvas id="plexus-canvas" class="fixed inset-0 w-full h-full -z-10"></canvas>
+
+    <!-- FLOATING NEBULA LIGHT BACKDROPS -->
+    <div class="fixed top-1/4 left-1/4 w-[30vw] h-[30vw] rounded-full bg-fuchsia-900/10 blur-[150px] pointer-events-none -z-10"></div>
+    <div class="fixed bottom-1/4 right-1/4 w-[35vw] h-[35vw] rounded-full bg-orange-900/10 blur-[150px] pointer-events-none -z-10"></div>
+
+    <!-- HEADER / NAVIGATION (Sleek minimalist style from your screenshot) -->
+    <nav class="fixed top-0 left-0 w-full bg-[#05020c]/60 backdrop-blur-md px-8 py-6 flex justify-center z-40">
+        <div class="flex items-center gap-12 text-xs font-heading tracking-[0.3em] font-bold">
+            <a href="#home" class="text-white hover:text-fuchsia-400 transition-colors duration-300">HOME</a>
+            <a href="#about" class="text-slate-400 hover:text-fuchsia-400 transition-colors duration-300">ABOUT</a>
+            <a href="#skills" class="text-slate-400 hover:text-fuchsia-400 transition-colors duration-300">SKILLS</a>
+            <a href="#work" class="text-slate-400 hover:text-orange-400 transition-colors duration-300">PROJECTS</a>
+            <a href="#contact" class="text-slate-400 hover:text-fuchsia-400 transition-colors duration-300">CONTACT</a>
+            
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="min-h-screen flex flex-col justify-center items-center pt-20 px-6 max-w-4xl mx-auto text-center relative">
+        
+        <!-- Glowing Avatar with your exact Orange Halo Ring effect -->
+        <div class="relative mb-8 group">
+            <div class="absolute -inset-1.5 bg-gradient-to-r from-orange-500 to-amber-600 rounded-full blur-md opacity-80 shadow-[0_0_35px_rgba(249,115,22,0.6)]"></div>
+            <img class="relative w-36 h-36 rounded-full border border-orange-400 object-cover scale-100 shadow-2xl" 
+                 alt="Akshara" 
+                 src="image.jpg.jpeg" 
+                 onerror="this.src='https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=300&auto=format&fit=crop'">
+        </div>
+        
+        <!-- Your exact gradient typographic style powered by Orbitron -->
+        <h1 class="font-heading text-5xl md:text-7xl font-black tracking-[0.1em] text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-pink-500 to-orange-500 mb-6 drop-shadow-[0_0_30px_rgba(217,70,239,0.3)]">
+            AKSHARA
+        </h1>
+        
+        <!-- Subtitle matching your precise wide layout format -->
+        <p class="font-mono text-xs md:text-sm font-semibold tracking-[0.4em] uppercase text-slate-300 opacity-90 max-w-xl mx-auto leading-loose">
+            FULL-STACK DEVELOPER
+        </p>
+
+        <!-- Dynamic Action Indicator Node -->
+        <div class="mt-16 animate-bounce">
+            <a href="#skills" class="text-[10px] tracking-[0.3em] font-heading text-fuchsia-400/60 hover:text-fuchsia-400 transition-colors">
+                [ Let's Dive-in: ]
+            </a>
+        </div>
+    </section>
+
+
+    <!-- ABOUT ME CORE LAYER (From your GitHub Readme) -->
+    <section id="about" class="py-32 px-6 max-w-4xl mx-auto relative z-10 border-t border-white/5">
+        <div class="mb-12">
+            <h2 class="font-heading text-lg font-bold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-500">
+            ABOUT ME
+            </h2>
+        </div>
+        
+        <div class="bg-white/[0.01] border border-white/5 backdrop-blur-md rounded-2xl p-8 shadow-2xl space-y-6 text-sm text-slate-300 leading-relaxed font-light">
+            <p>
+                I am a <strong class="text-fuchsia-400 font-semibold">2nd-year student at G.L. Bajaj Institute of Technology and Management</strong>. I love solving complex problems using Data Structures & Algorithms, building robust full-stack applications, and exploring the endless possibilities of Artificial Intelligence and Machine Learning.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-white/5">
+                <div>
+                    <h4 class="text-orange-400 font-heading text-xs tracking-wider mb-2">🎯 CURRENT FOCUS</h4>
+                    <p class="text-xs text-slate-400">Sharpening my DSA skills in <span class="text-slate-200 font-medium">Java</span> and building a strong foundation in <span class="text-slate-200 font-medium">AI/ML</span>.</p>
+                </div>
+                <div>
+                    <h4 class="text-pink-400 font-heading text-xs tracking-wider mb-2">🌱 CURRENTLY EXPLORING</h4>
+                    <p class="text-xs text-slate-400">Deep diving into Machine Learning workflows and Python libraries.</p>
+                </div>
+                <div class="pt-4 border-t border-white/5">
+                    <h4 class="text-fuchsia-400 font-heading text-xs tracking-wider mb-2">🍃 BEYOND THE CODE</h4>
+                    <p class="text-xs text-slate-400 italic">"When I'm not staring at a code editor, you can find me wandering in nature and getting lost in my thoughts."</p>
+            </div>
+            </div>
+    </section>
+
+    <!-- CORE CAPABILITIES / SKILLS LAYER -->
+    <section id="skills" class="py-32 px-6 max-w-5xl mx-auto relative z-10 border-t border-white/5">
+        <div class="mb-16">
+            <h2 class="font-heading text-lg font-bold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-pink-500">
+                 SYSTEM CAPABILITIES
+            </h2>
+            <p class="text-xs text-slate-400 tracking-wider mt-1 font-mono">INTELLIGENT COMPONENT INFRASTRUCTURE</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div class="bg-white/[0.01] border border-fuchsia-500/10 rounded-xl p-6 hover:bg-white/[0.03] hover:border-fuchsia-500/30 transition-all duration-500 backdrop-blur-md group shadow-[0_4px_30px_rgba(0,0,0,0.4)]">
+                <h3 class="font-heading text-[11px] tracking-widest text-fuchsia-400 mb-4">1. INTERFACE LAYER</h3>
+                <div class="flex flex-wrap gap-2 text-xs">
+                    <span class="bg-fuchsia-500/5 text-slate-300 px-2.5 py-1.5 rounded border border-fuchsia-500/10">React.js</span>
+                    <span class="bg-fuchsia-500/5 text-slate-300 px-2.5 py-1.5 rounded border border-fuchsia-500/10">Tailwind CSS</span>
+                    <span class="bg-fuchsia-500/5 text-slate-300 px-2.5 py-1.5 rounded border border-fuchsia-500/10">Next.js</span>
+                    <span class="bg-fuchsia-500/5 text-slate-300 px-2.5 py-1.5 rounded border border-fuchsia-500/10">HTML5 / CSS3</span>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white/[0.01] border border-orange-500/10 rounded-xl p-6 hover:bg-white/[0.03] hover:border-orange-500/30 transition-all duration-500 backdrop-blur-md group shadow-[0_4px_30px_rgba(0,0,0,0.4)]">
+                <h3 class="font-heading text-[11px] tracking-widest text-orange-400 mb-4">2. SERVER & DATA</h3>
+                <div class="flex flex-wrap gap-2 text-xs">
+                    <span class="bg-orange-500/5 text-slate-300 px-2.5 py-1.5 rounded border border-orange-500/10">Node.js</span>
+                    <span class="bg-orange-500/5 text-slate-300 px-2.5 py-1.5 rounded border border-orange-500/10">Express</span>
+                    <span class="bg-orange-500/5 text-slate-300 px-2.5 py-1.5 rounded border border-orange-500/10">MongoDB</span>
+                    <span class="bg-orange-500/5 text-slate-300 px-2.5 py-1.5 rounded border border-orange-500/10">PostgreSQL</span>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white/[0.01] border border-pink-500/10 rounded-xl p-6 hover:bg-white/[0.03] hover:border-pink-500/30 transition-all duration-500 backdrop-blur-md group shadow-[0_4px_30px_rgba(0,0,0,0.4)]">
+                <h3 class="font-heading text-[11px] tracking-widest text-pink-400 mb-4">3. CORE ENGINES</h3>
+                <div class="flex flex-wrap gap-2 text-xs">
+                    <span class="bg-pink-500/5 text-slate-300 px-2.5 py-1.5 rounded border border-pink-500/10">JavaScript</span>
+                    <span class="bg-pink-500/5 text-slate-300 px-2.5 py-1.5 rounded border border-pink-500/10">TypeScript</span>
+                    <span class="bg-pink-500/5 text-slate-300 px-2.5 py-1.5 rounded border border-pink-500/10">Python</span>
+                    <span class="bg-pink-500/5 text-slate-300 px-2.5 py-1.5 rounded border border-pink-500/10">Java</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT PIPELINE PIPELINE NODE -->
+    <section id="work" class="py-32 px-6 max-w-5xl mx-auto relative z-10 border-t border-white/5">
+        <div class="mb-16">
+            <h2 class="font-heading text-xl font-bold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-pink-500">
+                 ACTIVE PROJECT VAULT
+            </h2>
+            <p class="text-xs text-slate-400 tracking-wider mt-1 font-mono">PRODUCTION DEPLOYMENTS READY FOR INITIALIZATION</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Project 1 -->
+            <div class="bg-gradient-to-b from-white/[0.02] to-transparent border border-white/5 rounded-2xl p-8 hover:border-fuchsia-500/30 transition-all duration-500 backdrop-blur-sm group flex flex-col justify-between shadow-2xl">
+                <div>
+                    <h3 class="font-heading text-sm font-bold text-white mb-3 tracking-wider group-hover:text-fuchsia-400 transition-colors">
+                        Enterprise Orchestration Node
+                    </h3>
+                    <p class="text-xs text-slate-400 mb-6 leading-relaxed font-light">
+                        Architected high-velocity backend systems managing async workflows seamlessly with global configuration data scaling protocols.
+                    </p>
+                </div>
+                <div class="flex gap-6 text-[11px] font-heading font-bold tracking-widest">
+                    <a href="#" class="text-fuchsia-400 hover:text-fuchsia-300 transition-colors">[ LAUNCH.EXE ]</a>
+                    <a href="https://github.com/akshara297" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors">[ SOURCE_CODE ]</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bg-gradient-to-b from-white/[0.02] to-transparent border border-white/5 rounded-2xl p-8 hover:border-orange-500/30 transition-all duration-500 backdrop-blur-sm group flex flex-col justify-between shadow-2xl">
+                <div>
+                    <h3 class="font-heading text-sm font-bold text-white mb-3 tracking-wider group-hover:text-orange-400 transition-colors">
+                        Quantum Analytics Module
+                    </h3>
+                    <p class="text-xs text-slate-400 mb-6 leading-relaxed font-light">
+                        A real-time metrics parsing logic script visualizer processing computational network endpoints synchronously without lag overheads.
+                    </p>
+                </div>
+                <div class="flex gap-6 text-[11px] font-heading font-bold tracking-widest">
+                    <a href="#" class="text-orange-400 hover:text-orange-300 transition-colors">[ LAUNCH.EXE ]</a>
+                    <a href="https://github.com/akshara297" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors">[ SOURCE_CODE ]</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-32 px-6 max-w-4xl mx-auto text-center relative z-10 border-t border-white/5">
+        <h2 class="font-heading text-xl font-bold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 via-pink-500 to-orange-400 mb-4">
+            LET'S CONNECT
+        </h2>
+        <p class="text-xs text-slate-400 tracking-widest uppercase mb-12">I am always open to discussing new opportunities and potential collaborations.</p>
+
+        <div class="flex flex-wrap justify-center items-center gap-6 text-xs font-heading tracking-widest font-bold mb-20">
+            <a href="https://github.com/akshara297" target="_blank" rel="noopener noreferrer" class="border border-white/10 bg-white/[0.01] px-8 py-4 rounded hover:border-fuchsia-500/40 hover:bg-fuchsia-500/[0.02] transition-all">
+                GITHUB
+            </a>
+            <a href="https://www.linkedin.com/in/akshara-khatri-951101282" target="_blank" rel="noopener noreferrer" class="border border-white/10 bg-white/[0.01] px-8 py-4 rounded hover:border-orange-500/40 hover:bg-orange-500/[0.02] transition-all">
+                LINKEDIN
+            </a>
+            <a href="mailto:akshara.mumma@gmail.com" class="bg-gradient-to-r from-fuchsia-600/20 to-orange-600/20 border border-pink-500/30 text-pink-300 px-8 py-4 rounded hover:opacity-90 transition-all">
+                EMAIL
+            </a>
+        </div>
+
+        <div class="text-[10px] text-slate-600 tracking-widest font-heading">
+            © 2026 AKSHARA // SYSTEMS DEPLOYED ACROSS THE MATRIX
+        </div>
+    </section>
+
+    <!-- FLOATING PLUG AUDIO CONTROLLER BUTTON -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <button id="audio-toggle" class="w-12 h-12 rounded-full bg-gradient-to-tr from-fuchsia-600 to-orange-500 text-white flex items-center justify-center text-lg shadow-[0_0_20px_rgba(234,56,242,0.4)] hover:scale-110 transition-transform">
+            <span id="audio-icon">🔇</span>
+        </button>
+    </div>
+
+    <!-- AUDIO CONTAINER -->
+    <audio id="bg-audio" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- JAVASCRIPT HIGH-PERFORMANCE CUSTOM PLEXUS NETWORK ENGINE -->
+    <script>
+        const canvas = document.getElementById('plexus-canvas');
+        const ctx = canvas.getContext('2d');
+
+        let particles = [];
+        const maxParticles = 90; 
+        const linkDistance = 110; 
+        let mouse = { x: null, y: null, radius: 150 };
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            initParticles();
+        }
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.vx = (Math.random() - 0.5) * 0.6;
+                this.vy = (Math.random() - 0.5) * 0.6;
+                this.radius = Math.random() * 2 + 1;
+                this.color = Math.random() > 0.5 ? 'rgba(217, 70, 239, 0.7)' : 'rgba(249, 115, 22, 0.7)';
+            }
+
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+
+                if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+                if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+
+                let dx = mouse.x - this.x;
+                let dy = mouse.y - this.y;
+                let distance = Math.sqrt(dx * dx + dy * dy);
+                if (distance < mouse.radius) {
+                    let force = (mouse.radius - distance) / mouse.radius;
+                    this.x -= (dx / distance) * force * 0.4;
+                    this.y -= (dy / distance) * force * 0.4;
+                }
+            }
+
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                ctx.fillStyle = this.color;
+                ctx.fill();
+            }
+        }
+
+        function initParticles() {
+            particles = [];
+            for (let i = 0; i < maxParticles; i++) {
+                particles.push(new Particle());
+            }
+        }
+
+        function drawLines() {
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i + 1; j < particles.length; j++) {
+                    let dx = particles[i].x - particles[j].x;
+                    let dy = particles[i].y - particles[j].y;
+                    let distance = Math.sqrt(dx * dx + dy * dy);
+
+                    if (distance < linkDistance) {
+                        let alpha = (linkDistance - distance) / linkDistance * 0.25;
+                        ctx.beginPath();
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        
+                        let gradient = ctx.createLinearGradient(particles[i].x, particles[i].y, particles[j].x, particles[j].y);
+                        gradient.addColorStop(0, particles[i].color.replace('0.7', alpha));
+                        gradient.addColorStop(1, particles[j].color.replace('0.7', alpha));
+                        
+                        ctx.strokeStyle = gradient;
+                        ctx.lineWidth = 0.8;
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => {
+                p.update();
+                p.draw();
+            });
+            drawLines();
+            requestAnimationFrame(animate);
+        }
+
+        window.addEventListener('mousemove', (e) => {
+            mouse.x = e.clientX;
+            mouse.y = e.clientY;
+        });
+
+        window.addEventListener('mouseleave', () => {
+            mouse.x = null;
+            mouse.y = null;
+        });
+
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+        animate();
+
+        // Audio Handler
+        const audio = document.getElementById('bg-audio');
+        const audioBtn = document.getElementById('audio-toggle');
+        const audioIcon = document.getElementById('audio-icon');
+
+        audioBtn.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play().catch(e => console.log(e));
+                audioIcon.textContent = "🔊";
+            } else {
+                audio.pause();
+                audioIcon.textContent = "🔇";
+            }
+        });
+    </script>
+</body>
+</html>
