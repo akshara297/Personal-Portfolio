@@ -38,8 +38,6 @@ This single-page portfolio is built for high-performance and lightweight overhea
 ### 📡 Interactive Plexus Canvas Node
 The background utilizes a highly tuned particle physics simulation rendered in real-time. Particles alternate color schemas between **vibrant neon orange** and **fuchsia pink**, automatically connecting paths when within node-link distance thresholds. Features built-in mouse repulsion vector mechanics.
 
-### 📊 Real-Time Telemetry Cards
-Features live integrations that dynamically render general repository contributions, commit frequencies, and exact language breakdowns synchronously as your profile updates.
 
 ### 🎛️ Ambient Audio Interface
 Includes a floating audio controller hook connected to a looping background sound node to enhance user immersion. 
