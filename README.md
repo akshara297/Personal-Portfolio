@@ -1,4 +1,4 @@
-# 🌌 Akshara // Full-Stack & ML Portfolio
+# 🌌 Akshara Portfolio
 
 Welcome to the source repository for my personal engineering portfolio. Designed with a high-fidelity, interactive geometric plexus constellation backdrop, this terminal-style portfolio highlights my current work, capabilities, and live system metrics directly from GitHub.
 
